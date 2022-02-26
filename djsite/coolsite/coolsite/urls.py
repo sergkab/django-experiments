@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('cat/', categories),
+    path('about/', about, name='about'),
 ]

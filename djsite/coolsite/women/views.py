@@ -1,12 +1,26 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.shortcuts import render, redirect
+
+from .models import *
+
 
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse ('Hello, World!')
+menu = ["О сайте", "Добавить статью", "Обратная связь", "Войти"]
 
-def categories(request):
-    return HttpResponse ('<h1> categories </h1>')
+
+def index(request):
+    posts = Women.objects.all()
+    return render(request, 'women/index.html', {'posts': posts, 'menu': menu, 'title': 'Главная страница'})
+
+def about(request):
+    return render(request, 'women/about.html', {'menu': menu, 'title': 'О сайте'})
+
+def categories(request, catid):
+    if request.POST:
+        print(request.POST)
+    return HttpResponse(f"<h1>Статьи по категориям</h1><p>{catid}</p>")
+
+
 
