@@ -1,6 +1,7 @@
 Урок 1. Фреймворк Django. Установка Django и создание проекта
     https://www.youtube.com/watch?v=yKMa8XrHlaw&list=PLD-piGJ3Dtl0v10rx98Q0kuAsBfn2MmxL&index=2
     ( mini )
+    7:15  Маршруты приложения ( blog/urls.py )
 
     https://www.youtube.com/watch?v=dxv2gH6MI8M
     ( testproject$ )
@@ -18,4 +19,6 @@ cd testproject/
 ^C
 deactivate
 
+
+30 05 2022
 
