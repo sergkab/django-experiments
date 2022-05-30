@@ -7,6 +7,7 @@
     https://www.youtube.com/watch?v=aLvC9HCEsn8&list=PLD-piGJ3Dtl0v10rx98Q0kuAsBfn2MmxL&index=5
     16:40 migration
     23:20 static files
+ Урок 6. Admin panel
 
     https://www.youtube.com/watch?v=dxv2gH6MI8M
     ( testproject$ )
