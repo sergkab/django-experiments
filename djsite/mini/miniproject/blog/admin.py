@@ -1,8 +1,13 @@
 from django.contrib import admin
 from .models import Article
 
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title')
+    list_display_links = ('id', 'title')
+    search_fields = ('title', 'comtent')
+
 # Register your models here.
-admin.site.register(Article)
+admin.site.register(Article, ArticleAdmin)
 
 
 
